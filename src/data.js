@@ -14,5 +14,6 @@ const worksList = {
   'ремонт бобра':random(),
 }
 
+
  export const data = JSON.stringify(worksList)
- console.log(data);
+ 
