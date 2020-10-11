@@ -60,10 +60,9 @@ function App() {
         <tr>
             <td className='text'>сумма по дням</td>
             {days.map(day => <td className='day'>{day}</td>)}
-          </tr>
+        </tr>
       
       </table>
-      {/* <input  onChange={handleChange} value={enterNum} /> */}
     </div>
   );
 }

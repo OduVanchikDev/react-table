@@ -9,12 +9,12 @@ function Num({ number, word, i, setState, state }) {
   function handleClick() {
     setPopup(!popup)
   }
-  function handleChenge(e) {
 
+  function handleChenge(e) {
     setEnterNum(e.target.value)
   }
-  function hendleInputInsert() {
 
+  function hendleInputInsert() {
     setPopup(!popup)
     state[word][i] = +enterNum
     setState({ ...state })
@@ -29,7 +29,6 @@ function Num({ number, word, i, setState, state }) {
           <input onChange={handleChenge} value={enterNum} />
           <button onClick={hendleInputInsert}>add</button>
         </div>
-
       </div>
     </>
   )
