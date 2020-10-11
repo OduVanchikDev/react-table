@@ -11,3 +11,91 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.popup-body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.wrap {
+  position: relative;
+  width: 30%;
+  height: 10%;
+  left: 50%;
+  top: 20%;
+  background-color: inherit;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.disabled {
+  display: none;
+}
+
+.day {
+  text-shadow: 0 -1px rgba(0, 0, 0, .5);
+  user-select: none;
+  font-size: 10px;
+  text-align: center;
+  border: 1px solid rgb(212, 210, 210);
+  border-radius: 1px;
+  outline: none;
+  background: rgb(221, 220, 219) linear-gradient(rgb(153, 152, 152), rgb(209, 209, 208) 80%);
+  box-shadow:
+    0 2px rgb(212, 212, 211),
+    0 1px 5px rgba(0, 0, 0, .4),
+    inset 0 1px rgba(255, 255, 255, .3),
+    inset 0 0 3px rgba(255, 255, 255, .5);
+}
+
+.some {
+  text-align: center;
+  font-size: 9px;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, .5);
+  user-select: none;
+  padding: .2em .8em;
+  border: 1px solid rgb(212, 210, 210);
+  border-radius: 5px;
+  outline: none;
+  background: rgb(221, 220, 219) linear-gradient(rgb(236, 235, 235), rgb(247, 247, 245) 80%);
+  box-shadow:
+    0 2px rgb(212, 212, 211),
+    0 1px 15px rgba(0, 0, 0, .4),
+    inset 0 1px rgba(255, 255, 255, .3),
+    inset 0 0 3px rgba(255, 255, 255, .5);
+  transition: .2s;
+  cursor: pointer;
+}
+
+.some:hover {
+  background: rgb(247, 247, 62);
+}
+
+.text {
+  text-shadow: 0 -1px rgba(0, 0, 0, .5);
+  user-select: none;
+  font-size: 12px;
+  min-width: 100px;
+  text-align: center;
+  border: 1px solid rgb(212, 210, 210);
+  border-radius: 1px;
+  outline: none;
+  background: rgb(221, 220, 219) linear-gradient(rgb(153, 152, 152), rgb(209, 209, 208) 80%);
+  box-shadow:
+    0 2px rgb(212, 212, 211),
+    0 1px 5px rgba(0, 0, 0, .4),
+    inset 0 1px rgba(255, 255, 255, .3),
+    inset 0 0 3px rgba(255, 255, 255, .5);
+}
+
+.table {
+  margin: 50px 20px;
+}
